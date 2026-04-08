@@ -1,0 +1,13 @@
+form handeling and working with the forms 
+handle backend process  of forms and making sure that data coming from any frontend, framework, backend, library , we still handle it at backend
+
+========================================================================================
+                                 Session and Cookies
+========================================================================================
+hum log kuch bhi data frontend ya server par rakh sakte hai and jab bhi aap kuch bhi request backend par karoge wo frontend par saved data automatically backend par chala jaye ga
+
+
+app.use(express.json());
+app.use(urlencoded({ extended: true }));
+ab kya hota hai jab hum data bhejte hai server side me to vo blob jata hai poora to hume usse ache se read karna hota hai and usse samajhna hota hai ussi vajah se hum ye use karte hai ab ye jo upar vale hai usme humne suppose Postman me data read karna hai jo first line hai vo JSON data ko read karne me help kare gi and jo second hai usse hum aram se baki ka jisme key value pair hote hai vo read kar payenge
+

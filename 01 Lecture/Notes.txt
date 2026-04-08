@@ -1,0 +1,11 @@
+npm init - Lekha jokha of the project
+
+
+=====================================
+HTTP and HTTPS
+=====================================
+
+Protocols -  Rules
+internet par kuch bhi karne ke liye rules banaye gaye hai unke dwara jinhone internet banaaya hai, ab un rules ko follow karna zaruri hai aur ye rules follow ho isliye ye rules apke OS ke software me preinstalled atte hai
+
+http - yahi rule ya protocol hai jisko follow kiye bina aap internet par na kuch bhej sakte ho na mangva sakte ho

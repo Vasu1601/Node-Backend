@@ -1,0 +1,50 @@
+=============================================================================
+                            NPM Understanding
+=============================================================================
+
+npm - node package manager
+node js me jo installed ata hai vo kehlata hai module
+npm se jo hum download karte hai vo hota hai package
+example google package for text to speech is available via npm
+
+
+=============================================================================
+            Installing and Unistalling anything Basics & Advance
+=============================================================================
+npm install packageKaNaam
+npm i packageKaNaam
+Whan we install something it become dependency
+To install Specific Version - npm install packageKaNaam@version
+
+Uninstall -
+npm uninstall packageKaNaam
+
+
+NOTE - ab kayi baar hum package install karte hai tab kya hota hai ki node modules folder me kaafi kuch dikhne lag jata hai kaafi folders aa jate hai jo overwhelm lagte hai but unse darna nahi hai kyu ki vo hum read vaise bhi nahi karte hai to just kayi baar jo package ya dependencies hum install karte hai usse agge aur dependencies ki zarurat padti hai to vo unhe bhi install karta hai
+
+=============================================================================
+                            Dependencies
+=============================================================================
+Dependencies ka matlab hai packages and packages ki dependencies
+
+
+
+
+=============================================================================
+                            Dev Dependencies
+=============================================================================
+aise packages jo sirf development me kaam ayenge par jab app ban jaye ga aur upload (deploy) ho jaye ga tab hum in packages ko use nahi kar rhe honge 
+
+
+
+=============================================================================
+                                Scripts
+=============================================================================
+Kayi baar aap scripts chalate ho and us script me aap likhte ho 
+npm start
+npm run development
+Aisa kyu?
+
+Ans - ab jab humne node install kiya tha tab usne humre windows ke table me store kar diye the (Start ya test)
+aur jab kisi command ko humne create kiya ya hai ya script ko to uske agge hum aise chalate hai
+npm run yourCommand

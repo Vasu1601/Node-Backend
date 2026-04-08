@@ -1,0 +1,40 @@
+Express JS framework
+
+=========================================================================
+                     Intorduction to Express.JS
+=========================================================================
+Express js ek NPM package hai
+and this is a framework - framework matlab flow hai and flow hai to follow karna hi ho ga and where as library me tools hote hai tumhe jo karna hai karo tools ko jaise use karna hai karo
+
+manages everything from receiving the request and giving the response
+
+=========================================================================
+                                Route
+=========================================================================
+Domain vala part chod do and uske agge vala jo ata hai vo route kehlata hai
+eg -> youtube.com/profile = isme profile vala part route hai 
+
+
+app.get(route, requestHandler) -> requestHandler is a middleware and also it is always a function
+
+=========================================================================
+                            Middleware
+=========================================================================
+Agar route chalane se pehle aap kuch bhi perform karvana chahte ho vo hota hai middleware
+Jab bhi server request accept karta hai waha se route ke beech pahunchne tak agar aap uss request ko bhich me rokte ho and kuch perform karte ho, to ye elemet middleware kehlata hai in most cases
+
+app.use() -> Kisi bhi route se pehle ye chale ga, this is middleware and for what we use this for
+
+app.use(function(req, res, next){})
+
+app.use(function(req, res, next){
+    console.log("Middleware chala");
+    
+})
+
+Suppose ye 28 se 31 vala code run kar rhe ho to usne req accept to kari but agge nahi bheji kyu ki humne kaha hi nahi usse bhejne ko, to yaha par kaam aye ga next request forward kardo, nahi to ye gulla ghumta rhe ga
+app.use(function(req, res, next){
+    console.log("Middleware chala");
+    next();
+    
+})
