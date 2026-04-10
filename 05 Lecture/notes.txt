@@ -1,0 +1,66 @@
+initialize a project with npm => npm init -y
+express install => npm i express
+
+
+
+===================================================================
+Setting up parsers for form =>
+
+-> app.use(express.json());
+-> app.use(express.urlencoded({ extended: true }));
+===================================================================
+
+
+
+
+===================================================================
+Setting up ejs for ejs pages =>
+
+-> ejs kya hai html jaisa hi dikhta hai bilkul but hum usme calculations perform kar sakte hai, you can write dynamic stuff
+-> npm i ejs (install ejs from npm)
+-> setup ejs as a view engine
+ app.set('view engine', 'ejs')
+-> make a folder 'views', remember spelling same rakhna zaruri hai
+-> ab send ki jagah render likho and jo render me likho ge humara system jakar views me vahi same page dhundhe ga and ab render me humne set kiya hai ejs middleware me as a view engine to hume likhna nahi padta .ejs, sirf naam hi bahut hai 
+-> ejs me dynamic calculations ke liye use karo <%= >
+===================================================================
+
+
+
+
+===================================================================
+setting up public static files =>
+
+-> ab hume use me laani hai css files, js files and uske liye ek aur middleware use karna ho ga 
+ app.use(express.satic(path.join(__dirname, 'public')))
+ iss line la ,eamomg hai saari images, css and js files dhundhne ke liye kaha jana public folder me
+->  __dirname ki value hai absolute path yani ki apke root user se iss folder tak pahunchne ki value and path.join public se isse join karde ga and uske liye you need to do this
+const path = require('path');
+-> to iska matlab hum keh rhe hai ejs ko ki static files iss path par dhundhna public vale par
+===================================================================
+
+
+
+
+===================================================================
+                        Dynamic Routing
+===================================================================
+dynamic routing 
+how to get data coming from frontend at backend route
+
+hum log kayi baar kuch routes dekhte hai jinme ek hi hissa change hota hai
+/author/harsh
+/author/harshita
+/author/harshika
+ab khud socho in sabhi routes ke liye hum alag alag routes thodi na banaye ge
+that's where dynamic routing comes into picture
+
+steps - 
+Sabse pehle url par jao
+url likhiye apna jo aapko chahiye and enter dabaiye
+ab us url route ko create kariye
+res bhejiye kuch bhi
+ab us url ko agar dynamic banana hai to realise karo konsa part dynamic hai and uss part ke agge router me : lagado
+ab jo : laga hai usse hum kehte hai req.params and in our example it is req.params.username
+req.params is a object
+
