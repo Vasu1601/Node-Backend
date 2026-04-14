@@ -1,0 +1,44 @@
+========================================================================
+Data Storage:
+    aisa kuch jaha hum saare users ki info save kar sakte hai
+    database - More efficient as compare to files
+========================================================================
+
+
+
+========================================================================
+-> Types of DBS - SQL | NoSQL(this means not only SQL)
+-> SQL - data ko ek roop me rakhna - tables
+-> NoSQL - Objects way me data hota hai (MongoDB)
+========================================================================
+
+
+
+========================================================================
+what and why
+-> ab data store karna hai tabhi to zarurat hai iski 
+========================================================================
+
+
+
+========================================================================
+-> terminologies - collections, documents, schemas, keys, models
+-> Backend me do cheezein padhni padti hai application server and database server, so that means there are two servers in backend 
+
+collections - ab maanlo A project ka data hai usme user ka data hai, products ka data hai, sales ka data hai, to ye users, products, sales ye sab hai collections
+Document - Agar collection me se bhi aap kisi particular ka data dhundh rhe hai to vo kehlata hai documents
+
+CODE level           Database         
+------------------------------------------------------------------------
+mongoose.connect -> database create
+model create     -> collection create
+CREATE           -> document create
+========================================================================
+
+
+
+========================================================================
+npm i mongoose
+mongoose help karta hai humari help karta hai node ke server se mongoDB ke server se baat cheet karne ke liye
+this is ODM - Object Document mapping
+========================================================================
