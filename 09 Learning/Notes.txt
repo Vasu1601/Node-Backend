@@ -1,0 +1,18 @@
+==============================================================================================================
+                                Authentication and Authorization
+==============================================================================================================
+user ko profile dene se pehle ye check karna hota hai ki user hai kaun  - Authentication
+Ab vo user ke pass kya kya cheezein hai, what tasks he or she can perform - Authorization
+
+Ab kya hota hai ki server na bhool jata hai ki aap kon hot to ye na bahut dikkat karta hai ki har task ke liye aap baar baar bataye server ko ki bhai mai kon hu to iss case me humare kaam ata hai ek concpet cookies and session
+--------------------------------------------------------------------------------------------------------------
+
+
+==============================================================================================================
+                                            Things to Learn
+==============================================================================================================
+1. How to set cookies 
+2. bcrypt for password encryption and decruption
+3. What is JWT and how to store data in JWT and fetch data from JWT
+
+JWT teen hisso se banta hai
